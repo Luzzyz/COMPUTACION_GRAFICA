@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de soporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="form-page">
+        <div class="form-container">
+            <header class="form-header">
+                <span class="eyebrow">Soporte técnico</span>
+                <h1>Reporta un problema</h1>
+                <p>Describe tu incidencia y nuestro equipo te contactará pronto.</p>
+            </header>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-field">
+                    <label for="asunto">Asunto *</label>
+                    <input type="text" id="asunto" name="asunto" minlength="5" maxlength="80"
+                        placeholder="Resumen breve del problema" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="prioridad">Prioridad *</label>
+                    <select id="prioridad" name="prioridad" required>
+                        <option value="">Seleccione una prioridad</option>
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta</option>
+                        <option value="critica">Crítica</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="descripcion">Describe el problema *</label>
+                    <textarea id="descripcion" name="descripcion" rows="6" minlength="10" maxlength="1000"
+                        placeholder="Explica qué sucedió, cuándo y cómo reproducirlo..." required></textarea>
+                    <span class="ayuda">Máximo 1000 caracteres.</span>
+                </div>
+
+                <div class="form-field">
+                    <label for="adjunto">Adjuntar evidencia (captura, log, etc.)</label>
+                    <input type="file" id="adjunto" name="adjunto" accept="image/*,.pdf,.log,.txt" multiple>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button button-primary">Enviar ticket</button>
+                    <button type="reset" class="button button-secundario">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

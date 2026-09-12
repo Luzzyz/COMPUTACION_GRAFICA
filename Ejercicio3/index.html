@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="form-page">
+        <div class="form-container">
+            <header class="form-header">
+                <span class="eyebrow">Encuesta</span>
+                <h1>Encuesta de satisfacción</h1>
+                <p>Tu opinión nos ayuda a mejorar el servicio.</p>
+            </header>
+
+            <form action="#" method="post">
+                <fieldset class="campo-grupo">
+                    <legend>¿Cómo calificarías el servicio? *</legend>
+                    <label class="opcion">
+                        <input type="radio" name="calificacion" value="excelente" checked> Excelente
+                    </label>
+                    <label class="opcion">
+                        <input type="radio" name="calificacion" value="bueno"> Bueno
+                    </label>
+                    <label class="opcion">
+                        <input type="radio" name="calificacion" value="regular"> Regular
+                    </label>
+                    <label class="opcion">
+                        <input type="radio" name="calificacion" value="malo"> Malo
+                    </label>
+                </fieldset>
+
+                <fieldset class="campo-grupo">
+                    <legend>¿Qué aspectos te gustaría destacar?</legend>
+                    <label class="opcion">
+                        <input type="checkbox" name="aspectos" value="atencion"> Atención al cliente
+                    </label>
+                    <label class="opcion">
+                        <input type="checkbox" name="aspectos" value="rapidez"> Rapidez
+                    </label>
+                    <label class="opcion">
+                        <input type="checkbox" name="aspectos" value="precio"> Relación precio-calidad
+                    </label>
+                </fieldset>
+
+                <div class="form-field">
+                    <label for="recomendacion">¿Qué tan probable es que nos recomiendes? (0-10)</label>
+                    <input type="range" id="recomendacion" name="recomendacion" min="0" max="10" value="8">
+                    <output id="valor-recomendacion" for="recomendacion">8</output>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button button-primary">Enviar encuesta</button>
+                    <button type="reset" class="button button-secundario">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        const rango = document.getElementById('recomendacion');
+        const salida = document.getElementById('valor-recomendacion');
+        rango.addEventListener('input', () => salida.textContent = rango.value);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+:root {
+    --primary: #0f766e;
+    --primary-hover: #0c5d57;
+    --primary-light: #e5f5f3;
+    --navy: #08211f;
+    --text: #17302d;
+    --muted: #5f7d78;
+    --border: #dbe8e5;
+    --background: #f3f8f7;
+    --background-soft: #fbfdfc;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --shadow: 0 20px 60px rgba(10, 60, 50, 0.10);
+    --container: 520px;
+    --esp-xs: 4px; --esp-sm: 8px; --esp-md: 16px; --esp-lg: 24px; --esp-xl: 40px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+.form-page { display: flex; justify-content: center; padding: var(--esp-xl) var(--esp-md); }
+.form-container { width: 100%; max-width: var(--container); background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: var(--esp-xl); }
+.eyebrow { color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 12px; letter-spacing: .05em; }
+.form-header h1 { margin: var(--esp-xs) 0 var(--esp-sm); color: var(--navy); font-size: 26px; }
+.form-header p { color: var(--muted); margin: 0 0 var(--esp-lg); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--esp-md); }
+.form-field { display: grid; gap: var(--esp-sm); margin-bottom: var(--esp-md); }
+.form-field label { font-weight: 600; }
+.ayuda { color: var(--muted); font-size: 13px; }
+input, select, textarea {
+    width: 100%; padding: var(--esp-sm) var(--esp-md); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); background: var(--background-soft); font-family: inherit; font-size: 15px;
+}
+textarea { resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+.form-actions { display: flex; gap: var(--esp-md); margin-top: var(--esp-lg); }
+.button { padding: var(--esp-sm) var(--esp-lg); border-radius: var(--radius-sm); font-weight: 600; cursor: pointer; border: 1px solid transparent; }
+.button-primary { background: var(--primary); color: #fff; }
+.button-primary:hover { background: var(--primary-hover); }
+.button-secundario { background: #fff; border-color: var(--border); color: var(--text); }
+@media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }

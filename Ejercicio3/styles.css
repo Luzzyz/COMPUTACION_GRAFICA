@@ -1,0 +1,42 @@
+:root {
+    --primary: #7c3aed;
+    --primary-hover: #6524cf;
+    --primary-light: #f2ecff;
+    --navy: #1e1033;
+    --text: #241b33;
+    --muted: #6e6480;
+    --border: #e3ddec;
+    --background: #f8f6fb;
+    --background-soft: #fdfcff;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --shadow: 0 20px 60px rgba(60, 30, 90, 0.10);
+    --container: 480px;
+    --esp-xs: 4px; --esp-sm: 8px; --esp-md: 16px; --esp-lg: 24px; --esp-xl: 40px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+.form-page { display: flex; justify-content: center; padding: var(--esp-xl) var(--esp-md); }
+.form-container { width: 100%; max-width: var(--container); background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: var(--esp-xl); }
+.eyebrow { color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 12px; letter-spacing: .05em; }
+.form-header h1 { margin: var(--esp-xs) 0 var(--esp-sm); color: var(--navy); font-size: 26px; }
+.form-header p { color: var(--muted); margin: 0 0 var(--esp-lg); }
+
+.campo-grupo { border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--esp-md); margin: 0 0 var(--esp-lg); }
+.campo-grupo legend { font-weight: 600; padding: 0 var(--esp-xs); color: var(--navy); }
+
+.opcion { display: flex; align-items: center; gap: var(--esp-sm); margin-bottom: var(--esp-sm); cursor: pointer; }
+.opcion input { accent-color: var(--primary); }
+
+.form-field { display: grid; gap: var(--esp-sm); margin-bottom: var(--esp-md); }
+.form-field label { font-weight: 600; }
+input[type="range"] { width: 100%; accent-color: var(--primary); }
+#valor-recomendacion { font-weight: 700; color: var(--primary); }
+
+.form-actions { display: flex; gap: var(--esp-md); margin-top: var(--esp-lg); }
+.button { padding: var(--esp-sm) var(--esp-lg); border-radius: var(--radius-sm); font-weight: 600; cursor: pointer; border: 1px solid transparent; }
+.button-primary { background: var(--primary); color: #fff; }
+.button-primary:hover { background: var(--primary-hover); }
+.button-secundario { background: #fff; border-color: var(--border); color: var(--text); }
