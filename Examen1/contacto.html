@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Hospital Salud Vida</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html#inicio" class="logo"><img src="img/logos/logo-saludvida-header.png" alt="Hospital Salud Vida"></a>
+    <ul>
+      <li><a class="link" href="index.html#inicio">Inicio</a></li>
+      <li><a class="link" href="index.html#servicios">Servicios</a></li>
+      <li><a class="link" href="index.html#nosotros">Nosotros</a></li>
+      <li><a class="link" href="index.html#equipo">Equipo</a></li>
+      <li><a class="link btn-contacto active" href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="contacto-wrap">
+    <h2 style="text-align:center">Contáctanos</h2>
+    <p class="subtitulo">Escríbenos y te responderemos lo antes posible.</p>
+
+    <div class="contacto-grid">
+      <div>
+        <div class="info-item"><img src="img/icons/pin.svg" alt=""><p>Calle 10 #20-30, Centro</p></div>
+        <div class="info-item"><img src="img/icons/phone.svg" alt=""><p>(601) 555 0123</p></div>
+        <div class="info-item"><img src="img/icons/mail.svg" alt=""><p>contacto@saludvida.com</p></div>
+        <div class="info-item"><img src="img/icons/ambulance.svg" alt=""><p>Urgencias: abierto 24 horas</p></div>
+      </div>
+
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto">
+          <option>Solicitar cita</option>
+          <option>Información de servicios</option>
+          <option>Sugerencias o reclamos</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </main>
+
+  <footer><img class="logo-footer" src="img/logos/logo-saludvida-footer.png" alt="Hospital Salud Vida"><p>&copy; 2026 Hospital Salud Vida. Todos los derechos reservados.</p></footer>
+</body>
+</html>
