@@ -1,0 +1,14 @@
+Nota aclaratoria - Examen 1 de Computación Gráfica
+
+Autor real del trabajo: Lucio Rivera
+
+El examen fue desarrollado y finalizado en un computador distinto al habitual, 
+el cual tenía configuradas las credenciales de Git de otra persona (mi 
+compañera Kelly Ortega). Por un descuido, el commit y la subida del examen 
+se realizaron sin cambiar esas credenciales, razón por la cual el historial 
+de commits muestra su nombre de usuario como autor, en lugar del mío.
+
+El contenido completo del examen (index.html, contacto.html, estilos y 
+recursos) fue realizado por mí.
+
+Este archivo se agrega como aclaración de la situación.
